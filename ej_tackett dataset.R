@@ -5,10 +5,10 @@ matchplay <- c(5, 4, 0, 6, 17, 12)
 titles <- c(5, 2, 1, 0, 1, 4)
 avg <- c(227.1, 224.5, 220.2, 221.9, 220.4, 217.9)
 earnings <- c(458450, 160675, 84370, 106450, 172045, 103992)
-x <- 2018:2023
+x <- 2023:2018
 
 ej_tackett <- data.frame(year, events, cashes, matchplay, titles, avg, earnings)
 
 print(ej_tackett)
-plot(x, sort(ej_tackett$events, decreasing = TRUE), type="l", ylab="y", main="EJ Tackett's # of Events per Year")
+plot(x, ej_tackett$events, type="l", ylab="y", main="EJ Tackett's # of Events per Year")
 axis(1, at=x, labels=x)
